@@ -1,0 +1,60 @@
+.mondongo{
+    color: white !important;
+}
+.btn-payment {
+    background-image: url('../img/EFECTY-LOGO-V1.png'); /* Logo de Efecty */
+    background-repeat: no-repeat;
+    background-position: center; /* Centrar el logo */
+    background-size: contain; /* Ajustar el tamaño del logo */
+    width: 80px; /* Ancho del botón */
+    height: 80px; /* Alto del botón */
+    border: 2px solid black; /* Borde negro elegante */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transiciones suaves */
+    display: inline-block; /* Alinear los botones horizontalmente */
+    margin: 5px; /* Espaciado entre los botones */
+}
+
+.btn-payment[data-method="bancolombia"] {
+    background-image: url('../img/Bancolombia.png'); /* Logo de Bancolombia */
+}
+
+.btn-payment[data-method="bbva"] {
+    background-image: url('../img/BBVA-logo.png'); /* Logo de BBVA */
+}
+
+.btn-payment:hover {
+    background-color: yellow; /* Color amarillo al pasar el mouse */
+    border-color: rgb(0, 0, 0); /* Cambiar el borde a amarillo */
+}
+/* Asegurarse de que la tabla esté en un contenedor deslizante horizontal */
+.table-responsive {
+    overflow-x: auto !important;  /* Permite desplazamiento horizontal cuando la tabla excede el ancho */
+    -webkit-overflow-scrolling: touch !important;  /* Mejora el desplazamiento en dispositivos móviles */
+    width: 100% !important;  /* Asegura que el contenedor de la tabla ocupe todo el ancho disponible */
+}
+
+/* Estilo para la tabla para asegurarnos de que no se desborde */
+#tblPendientes {
+    width: 100% !important;  /* Asegura que la tabla ocupe el 100% del ancho disponible dentro de su contenedor */
+    table-layout: auto !important;  /* Permite que las celdas de la tabla se ajusten automáticamente */
+    background-color: #ffffff !important; /* Fondo blanco para toda la tabla */
+}
+
+
+/* Cambia el fondo de la fila al pasar el mouse */
+#tblPendientes tbody tr:hover {
+    background-color: #ffd700 !important; /* Fondo amarillo al pasar el mouse */
+    color: #fff !important;  /* Cambia el color del texto a blanco cuando se pasa el mouse */
+}
+
+
+/* Estilo para el contenedor blanco */
+.container-white {
+    background-color: #ffffff !important; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+}
+
+
